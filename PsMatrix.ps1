@@ -31,7 +31,7 @@ Begin{
 			
 			if($bg){
 				for($xx = ($this.x - 2); $xx -lt ($this.x + 2); $xx++){
-					if($xx -ge 0 -and $xx -le ([console]::windowWidth) ){
+					if($xx -ge 0 -and $xx -lt ([console]::windowWidth) ){
 						for($yy = $this.y ; $yy -lt [console]::windowHeight - 4; $yy++){
 							$gCounter = get-random -minimum 32 -maximum 48
 							[console]::SetCursorPosition($xx, ($yy) )
